@@ -21,11 +21,8 @@ const childSchema = new mongoose.Schema({
         required: true
     },
     class_id: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Number,
         ref: 'Class'
-    },
-    photo_url: {
-        type: String
     }
 }, {
     timestamps: true
